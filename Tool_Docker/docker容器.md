@@ -9,7 +9,7 @@ docker run [docker_para] [res:image_name] [cmd] [cmd_para]
     --net="bridge": 指定容器的网络连接类型，支持 bridge/host/none/container: 四种类型；
     --priviledged #指定特权模式，此模式下，容器内root以真root模式运行
     --name="" 为容器指定名字
-    --init 
+    --init 指明一个init程序，若不指明，则在环境变量中查找
 # 实例
     #从images中创建容器并运行
     docker run ubuntu:15.10 /bin/echo "Hello world" 
