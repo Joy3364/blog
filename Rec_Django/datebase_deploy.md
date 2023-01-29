@@ -7,7 +7,9 @@ DATABASES = {
         'NAME': 'app_data',
         'ENGINE': 'django.db.backends.postgresql',
         'USER': 'postgres_user',
-        'PASSWORD': 's3krit'
+        'PASSWORD': 's3krit',
+        'HOST':'',
+        'POST':'',
     },
     'users': {
         'NAME': 'user_data',
